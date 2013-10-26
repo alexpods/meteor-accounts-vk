@@ -1,4 +1,4 @@
 meteor-accounts-vk
 ==================
 
-Login service for Vkontakte accounts
+Login service for VKontakte accounts
