@@ -6,7 +6,7 @@ Login service for VKontakte (https://vk.com) accounts
 Usage
 -----
 
-1. Clone the repo into your local meteor `packages` folder or add this package to you project using meteorite:
+1. Add this package to you project using meteorite:
 ```sh
 $ mrt add accounts-vk
 ```
@@ -26,7 +26,11 @@ $ mrt add accounts-vk
         });
     }
 ```
-**GUI**: Set {{loginButtons}} into your template. Then go to your browser, open page with {{loginButtons}}, click on "configure Vk login" button and fill "App Id" and "App Secret" fields following by instructions.
+**GUI**: Add `accounts-ui` package to your project:
+```sh
+$ mrt add accounts-ui
+```
+Set `{{loginButtons}}` into your template. Then go to your browser, open page with `{{loginButtons}}`, click on "configure Vk login" button and fill "App Id" and "App Secret" fields following by instructions.
 
 3. Use `Meteor.loginWithVk(options, callback)` for user authentication (you can omit `options` argument).
 
@@ -46,6 +50,7 @@ Dependencies
 
 1. accounts-base
 2. accounts-oauth
+3. accounts-ui (if you want to use GUI)
 
 [![githalytics.com alpha](https://cruel-carlota.pagodabox.com/63ce76383fc2d7e3e960ca8e44371f44 "githalytics.com")](http://githalytics.com/alexpods/meteor-accounts-vs)
 
