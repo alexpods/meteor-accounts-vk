@@ -3,6 +3,6 @@
     "description": "Login service for VKontakte accounts",
     "homepage": "https://github.com/alexpods/meteor-accounts-vk",
     "author": "Aleksey Podskrebyshev (https://github.com/alexpods)",
-    "version": "0.0.2",
+    "version": "0.1.0",
     "git": "https://github.com/alexpods/meteor-accounts-vk.git"
 }
