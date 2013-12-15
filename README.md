@@ -11,7 +11,7 @@ Usage
 $ mrt add accounts-vk
 ```
 
-2. Configure you vkontakte account. You can do this using GUI or manually. 
+2. Configure vkontakte. You can do this using GUI or manually. 
 **Manually**: Just add next code to you config file.
 ```js
     if (Meteor.isServer) {
