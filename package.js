@@ -14,6 +14,8 @@ Package.on_use(function(api) {
     api.use('random', 'client');
     api.use('service-configuration', ['client', 'server']);
 
+    api.export && api.export('VK', 'client');
+
     api.add_files("lib/accounts_vk.js");
     api.add_files('lib/vk_client.js', 'client');
     api.add_files('lib/vk_server.js', 'server');
