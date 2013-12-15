@@ -6,13 +6,13 @@ Login service for VKontakte (https://vk.com) accounts
 Usage
 -----
 
-1. Add this package to you project using meteorite:
+1. Add this package to your project using meteorite:
 ```sh
 $ mrt add accounts-vk
 ```
 
 2. Configure vkontakte. You can do this using GUI or manually. 
-**Manually**: Just add next code to you config file.
+**Manually**: Just add next code to your config file.
 ```js
     if (Meteor.isServer) {
         Accounts.loginServiceConfiguration.remove({
@@ -22,7 +22,7 @@ $ mrt add accounts-vk
         Accounts.loginServiceConfiguration.insert({
             service: 'vk',
             appId:   '1234567',      // Your app id
-            secret:  'someappsecret' // You app secret
+            secret:  'someappsecret' // Your app secret
         });
     }
 ```
