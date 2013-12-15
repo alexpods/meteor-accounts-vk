@@ -1,17 +1,17 @@
 meteor-accounts-vk
 ==================
 
-Login service for VKontakte (https://vk.com) accounts
+Login service for Vkontakte accounts (https://vk.com).
 
 Usage
 -----
 
-1. Add this package to your project using meteorite:
+1. Add the package to your project using meteorite:
 ```sh
 $ mrt add accounts-vk
 ```
 
-2. Configure vkontakte. You can do this using GUI or manually. 
+2. Configure vkontakte login service. You can do this using GUI or manually.
 **Manually**: Just add next code to your config file.
 ```js
     if (Meteor.isServer) {
@@ -34,7 +34,7 @@ Set `{{loginButtons}}` into your template. Then go to your browser, open page wi
 
 3. Use `Meteor.loginWithVk(options, callback)` for user authentication (you can omit `options` argument).
 
-4. For custom user creation you must set 'createUser' event handler:
+4. For customization of new user creation you must set 'createUser' event handler:
 ```js
     Accounts.onCreateUser(function(options, user) {
         user.custom_field = "custom value";
@@ -44,6 +44,8 @@ Set `{{loginButtons}}` into your template. Then go to your browser, open page wi
 ```
 
 ***Enjoy!***
+
+> If this package helped you - **STAR** it on github. This is not difficult for you but important for me.
 
 Dependencies
 ------------
