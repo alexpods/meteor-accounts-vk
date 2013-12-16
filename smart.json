@@ -1,8 +1,8 @@
 {
     "name": "accounts-vk",
-    "description": "Login service for VKontakte accounts",
+    "description": "Login service for VKontakte accounts (https://vk.com)",
     "homepage": "https://github.com/alexpods/meteor-accounts-vk",
     "author": "Aleksey Podskrebyshev (https://github.com/alexpods)",
-    "version": "0.1.1",
+    "version": "0.1.2",
     "git": "https://github.com/alexpods/meteor-accounts-vk.git"
 }
