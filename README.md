@@ -1,7 +1,7 @@
 meteor-accounts-vk
 ==================
 
-Login service for Vkontakte accounts (https://vk.com).
+Login service for VKontakte accounts (https://vk.com).
 
 Usage
 -----
