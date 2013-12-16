@@ -1,5 +1,5 @@
 Package.describe({
-    summary: "Login service for VKontakte accounts"
+    summary: "Login service for VKontakte accounts (https://vk.com)"
 });
 
 Package.on_use(function(api) {
