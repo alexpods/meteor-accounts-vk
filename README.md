@@ -11,7 +11,7 @@ Usage
 $ mrt add accounts-vk
 ```
 
-2. Configure vkontakte login service. You can do this using GUI or manually.
+2. Configure vkontakte login service. You can do mannually or using GUI.
     
     **Manually**: Just add next code to your config file.
     ```js
