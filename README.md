@@ -8,19 +8,19 @@ Usage
 
 1. Add the package to your project using meteorite:
 ```sh
-$ mrt add accounts-vk
+$ meteor add mrt:accounts-vk
 ```
 
 2. Configure vkontakte login service. You can do mannually or using GUI.
-    
+
     **Manually**: Just add next code to your config file.
     ```js
         if (Meteor.isServer) {
-            Accounts.loginServiceConfiguration.remove({
+            ServiceConfiguration.configurations.remove({
                 service: 'vk'
             });
-        
-            Accounts.loginServiceConfiguration.insert({
+
+            ServiceConfiguration.configurations.insert({
                 service: 'vk',
                 appId:   '1234567',      // Your app id
                 secret:  'someappsecret' // Your app secret
@@ -30,14 +30,14 @@ $ mrt add accounts-vk
 
     **GUI**: 
     * Add `accounts-ui` package to your project:
-    
+
         ```sh
-        $ mrt add accounts-ui
+        $ meteor add accounts-ui
         ```
-    * Set `{{loginButtons}}` into your template
-    * Go to your browser, open page with `{{loginButtons}}`
+    * Set `{{> loginButtons}}` into your template
+    * Go to your browser, open page with `{{> loginButtons}}`
     * Click on "configure Vk login" button
-    * Fill "App Id" and "App Secret" fields in popup window following by instructions
+    * Fill "App Id", "App Secret" "Scope" fields in popup window following by instructions
 
 3. Use `Meteor.loginWithVk(options, callback)` for user authentication (you can omit `options` argument).
 
