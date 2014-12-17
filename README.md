@@ -58,6 +58,13 @@ $ meteor add mrt:accounts-vk
 If this package helped you - STAR it on github. This is not difficult for you, but important for me.
 ```
 
+Contributors
+------------
+
+Thanks to these people for their contributions! I appriciate it a lot!
+* @mike1pol (Mikhail Poluboyarinov)
+* @Neftedollar
+
 Dependencies
 ------------
 
