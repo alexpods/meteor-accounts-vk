@@ -1,6 +1,6 @@
 Package.describe({
     summary: "Login service for VKontakte accounts (https://vk.com)",
-    version: "0.1.4",
+    version: "0.2.0",
     git: "https://github.com/alexpods/meteor-accounts-vk",
     name: "mrt:accounts-vk"
 });
@@ -11,13 +11,14 @@ Package.on_use(function(api) {
     api.imply('accounts-base', ['client', 'server']);
     api.use('accounts-oauth', ['client', 'server']);
     api.imply('accounts-oauth', ['client', 'server']);
+    api.use('service-configuration', ['client', 'server']);
+    api.imply('service-configuration', ['client', 'server']);
 
     api.use('oauth2', ['client', 'server']);
     api.use('oauth', ['client', 'server']);
     api.use('http', ['server']);
     api.use('underscore', 'server');
     api.use('random', 'client');
-    api.use('service-configuration', ['client', 'server']);
     api.use('templating', 'client');
 
     api.add_files("lib/accounts_vk.js");
