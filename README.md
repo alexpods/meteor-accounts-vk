@@ -22,8 +22,9 @@ $ meteor add mrt:accounts-vk
 
             ServiceConfiguration.configurations.insert({
                 service: 'vk',
-                appId:   '1234567',      // Your app id
-                secret:  'someappsecret' // Your app secret
+                appId:   '1234567',       // Your app id
+                secret:  'someappsecret', // Your app secret
+                scope:   'email,status'   // Your app scope
             });
         }
     ```
@@ -37,7 +38,7 @@ $ meteor add mrt:accounts-vk
     * Set `{{> loginButtons}}` into your template
     * Go to your browser, open page with `{{> loginButtons}}`
     * Click on "configure Vk login" button
-    * Fill "App Id", "App Secret" "Scope" fields in popup window following by instructions
+    * Fill "App Id", "App Secret", "[Scope](https://vk.com/dev/permissions)" fields in popup window following by instructions
 
 3. Use `Meteor.loginWithVk(options, callback)` for user authentication (you can omit `options` argument).
 
