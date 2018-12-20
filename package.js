@@ -1,6 +1,6 @@
 Package.describe({
     summary: "Login service for VKontakte accounts (https://vk.com)",
-    version: "0.2.0",
+    version: "1.0.1",
     git: "https://github.com/alexpods/meteor-accounts-vk",
     name: "mrt:accounts-vk"
 });

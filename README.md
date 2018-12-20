@@ -24,12 +24,13 @@ $ meteor add mrt:accounts-vk
                 service: 'vk',
                 appId:   '1234567',       // Your app id
                 secret:  'someappsecret', // Your app secret
-                scope:   'email,status'   // Your app scope
+                scope:   'email,status',  // Your app scope
+                v:        '5.92'          // VK API version
             });
         }
     ```
 
-    **GUI**: 
+    **GUI**:
     * Add `accounts-ui` package to your project:
 
         ```sh
