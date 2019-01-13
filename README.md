@@ -67,6 +67,7 @@ Thanks to these people for their contributions! I appriciate it a lot!
 * @mike1pol (Mikhail Poluboyarinov)
 * @Neftedollar
 * @illfantasy
+* @Chronosms (Mikhail Smykov)
 
 Dependencies
 ------------
